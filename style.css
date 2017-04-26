@@ -11,6 +11,8 @@ input[type=text]:focus {
 
 .results{
 	padding: 10px 20px 20px 10px;
+	text-align: center;
+	width:900px;
 }
 
 p{
@@ -19,6 +21,7 @@ p{
 	background-color: rgba(255,255,0,.5);
 	padding: 10px 20px 20px 10px;
 	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
 }
 
 p:hover{
