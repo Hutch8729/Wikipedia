@@ -3,11 +3,12 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title></title>
 </head>
 <body>
-	<button class="btn" id="randomWiki" onclick="getRandomWiki()">Random</button>
-	<button class="btn" id="searchWiki" onclick="searchWiki()">Search</button>
+	<i id="randomIcon" class="fa fa-random fa-3x" aria-hidden="true" onclick="getRandomWiki()"></i>
+	<i id="searchIcon" class="fa fa-search fa-3x" aria-hidden="true" onclick="searchWiki()"></i>
 	<input  id="searchTxt" type="text" name="search" placeholder="Search..">
 	<div id="searchResults">I should change</div>
 

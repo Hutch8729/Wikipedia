@@ -15,10 +15,14 @@ function searchWiki(){
 
 	$.getJSON(apiurl, function(data){
 		console.log(data);
-		searchResultsHTML += "<div class = 'results'>";
+		searchResultsHTML += "<div class = 'results' id='" + data.query.search[0].title + "'>";
+		console.log(searchResultsHTML);
 		searchResultsHTML += "<p><strong>" + data.query.search[0].title + "</strong><br>" + data.query.search[0].snippet + "</p>";
 		searchResultsHTML += "</div>";
 		$('#searchResults').html(searchResultsHTML);
+		document.getElementById(data.query.search[0].title).addEventListener('click', function(){
+			window.location.href = goToWikiBaseURL + data.query.search[0].title;
+		});
 	} )
 
 }
