@@ -8,8 +8,19 @@
 input[type=text]:focus {
     width: 50%;
 }
+
 .results{
-	border: 1px;
-	border-color: black;
-	border-width: 100%;
+	padding: 10px 20px 20px 10px;
+}
+
+p{
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: rgba(255,255,0,.5);
+	padding: 10px 20px 20px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+	background-color: CornflowerBlue !important;
 }
